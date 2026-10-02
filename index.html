@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Java LifePilot — an interactive Java fundamentals learning demo by Haritha Kongi.">
+  <title>Java LifePilot | Haritha Kongi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span>☕</span> Java LifePilot</a>
+    <a class="github" href="https://github.com/HarithaKongi/Java-LifePilot" target="_blank" rel="noreferrer">View on GitHub ↗</a>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">JAVA FUNDAMENTALS • INTERACTIVE DEMO</div>
+      <h1>Your personal<br><span>Java learning cockpit.</span></h1>
+      <p>Explore the same problem-solving concepts from the Java console project through a clean, interactive web interface.</p>
+      <div class="hero-actions">
+        <button class="primary" onclick="selectTool('calculator')">Launch Calculator →</button>
+        <button class="secondary" onclick="selectTool('analyzer')">Analyze a Number</button>
+      </div>
+    </section>
+
+    <section class="workspace">
+      <aside class="sidebar">
+        <div class="side-label">TOOLS</div>
+        <button class="nav active" data-tool="calculator" onclick="selectTool('calculator')"><b>01</b><span>Smart Calculator</span></button>
+        <button class="nav" data-tool="analyzer" onclick="selectTool('analyzer')"><b>02</b><span>Number Analyzer</span></button>
+        <button class="nav" data-tool="prime" onclick="selectTool('prime')"><b>03</b><span>Prime Checker</span></button>
+        <button class="nav" data-tool="leap" onclick="selectTool('leap')"><b>04</b><span>Leap Year</span></button>
+        <button class="nav" data-tool="compare" onclick="selectTool('compare')"><b>05</b><span>Compare Numbers</span></button>
+        <button class="nav" data-tool="addition" onclick="selectTool('addition')"><b>06</b><span>Quick Addition</span></button>
+      </aside>
+
+      <section class="panel">
+        <div id="tool-content"></div>
+      </section>
+    </section>
+
+    <section class="concepts">
+      <div><span>01</span><strong>Variables</strong><small>Store values</small></div>
+      <div><span>02</span><strong>Conditions</strong><small>Make decisions</small></div>
+      <div><span>03</span><strong>Loops</strong><small>Repeat logic</small></div>
+      <div><span>04</span><strong>Methods</strong><small>Reuse logic</small></div>
+    </section>
+  </main>
+
+  <footer>Built by <strong>Haritha Kongi</strong> • Java LifePilot</footer>
+  <script src="script.js"></script>
+</body>
+</html>
