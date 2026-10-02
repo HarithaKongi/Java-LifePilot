@@ -1,4 +1,4 @@
-# Java LifePilot ☕
+# Java LifePilot 
 
 **Your Personal Java Assistant** — a beginner-friendly console application built to practice core Java fundamentals.
 
